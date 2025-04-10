@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://ivey.sophielabs.net/expfront/step/index -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoPHIE</title><meta http-equiv="Imagetoolbar" content="false">
+<meta name="robots" content="all">
+<link media="screen" href="https://ivey.sophielabs.net/_media/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link type="text/css" href="./SoPHIE3_files/bootstrap.min.css" media="all" rel="stylesheet">
+<link type="text/css" href="./SoPHIE3_files/form.css" media="all" rel="stylesheet">
+<link type="text/css" href="./SoPHIE3_files/default.css" media="all" rel="stylesheet">
+<script>
+var appBase = 'https://ivey.sophielabs.net/';
+</script><script>
+var old = alert;
+alert = function() {
+  console.log(new Error().stack);
+  old.apply(window, arguments);
+};
+</script>
+</head>
+<body style="">
+
+	<div id="main">
+
+		<div id="header">
+			<div id="headline">
+			</div>
+
+			<div id="headlinks">
+									<div id="sophie_timer_warning"></div>
+					<div id="sophie_timer"></div>
+							</div>
+
+			
+		</div>
+
+		<div id="content">
+			<div id="sophie_steploading" class="hidden sophie_loading"><img src="./SoPHIE3_files/ajax-loader.gif"></div><div id="sophie_stepcontent" class=""><style>
+.boxed {
+  border: 1px solid black;
+}
+
+.slidecontainer {
+  width: 40%;
+}
+  .mybutton {
+    top:50%;
+    background-color:blue;
+    color: white;
+    border:none;
+    border-radius:10px;
+  	min-height:30px; 
+    min-width: 120px;
+  font-size: 20px;
+  }
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+</style>
+ <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<form action="https://ivey.sophielabs.net/expfront/step/index" method="post"> 
+    
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        img.resize {
+            max-width: 45%;
+            max-height: auto;
+        }
+        img.resize2 {
+            max-width: 35%;
+            max-height: auto;
+        }
+        .boxed {
+            border: 1px solid black;
+        }
+    </style>
+
+    
+    <center>
+        <div class="boxed" style="display: inline-block"><strong>This is a <i>practice</i> round. Results do not affect your final cash reward.</strong></div>
+    </center>
+    <br>
+    <center>
+        <div class="boxed" style="display: inline-block"><strong>You are currently in round 1 of 3 practice rounds</strong></div>
+    </center>
+    <br><br>
+
+  <p style="text-align:justify">
+    
+</p>
+  <br>
+    <h2 style="text-align:justify"><strong>How to Play</strong></h2>
+    <br>
+    <ul>
+        <li>Select Your Investment: Use the slider to choose any amount from $0 to $4,000.</li>
+		 <li> Review Potential Savings: Check the table for the minimum, most likely, and maximum <strong>possible</strong> savings(reductions in electricity costs) at each investment level.</li>
+	  <li>See Net Results: Your final net savings will be your <strong>realized</strong> savings minus your investment cost.</li>
+         <li>If you choose not to invest in energy efficiency ($0 investment), your savings and net savings will be zero.</li>
+    </ul>
+<br>
+    <div class="slidecontainer"> 
+        <input type="range" min="0" max="4000" step="100" value="0" class="slider" name="invi" id="myRange">
+    </div>
+<br>
+    <p><b>If you invest <font color="blue">$<span id="investment">1500</span></font> on Energy Efficiency improvements, your electricity costs decrease by <font color="blue"><span id="percentSavingDisplay">15.49%</span></font>.</b></p>
+<br>
+    <table class="tg">
+        <thead>
+            <tr>
+                <th>Percentage of Saving</th>
+                <th>Minimum Saving in Electricity Price</th>
+                <th>Most Likely Saving in Electricity Price</th>
+                <th>Maximum Saving in Electricity Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span id="percentSavingTable">15.49%</span></td>
+                <td><span id="minSaving">$2633.3</span></td>
+                <td><span id="mostSaving">$3098</span></td>
+                <td><span id="maxSaving">$3562.7</span></td>
+            </tr>
+        </tbody>
+    </table>
+<br>
+  
+  <li>Best Scenario Net Saving: <font color="green"><span id="bestROI">$2062.7</span></font></li>
+<li>Worst Scenario Net Saving: <font color="red"><span id="worstROI">$1133.3</span></font></li>
+
+    <script>
+        function round(value, precision) {
+            var multiplier = Math.pow(10, precision || 0);
+            return Math.round(value * multiplier) / multiplier;
+        }
+
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("investment");
+
+        var percentSavingDisplay = document.getElementById("percentSavingDisplay");  // Displayed in paragraph
+        var percentSavingTable = document.getElementById("percentSavingTable");      // Displayed in table
+
+        var minSaving = document.getElementById("minSaving");
+        var mostSaving = document.getElementById("mostSaving");
+        var maxSaving = document.getElementById("maxSaving");
+
+        var bestROI = document.getElementById("bestROI");
+        var worstROI = document.getElementById("worstROI");
+
+        output.innerHTML = slider.value;
+
+        // Get the round number from PHP
+        var roundNumber = 1;
+
+        // Define different values for each round
+        var minValue, mostValue, maxValue;
+
+        if (roundNumber === 1) {
+            minValue = 17000;
+            mostValue = 20000;
+            maxValue = 23000;
+        } else if (roundNumber === 2) {
+            minValue = 18000;
+            mostValue = 20000;
+            maxValue = 22000;
+        } else {
+            minValue = 19000;
+            mostValue = 20000;
+            maxValue = 21000;
+        }
+
+        slider.addEventListener("input", function () {
+            var investValue = parseFloat(this.value) || 0;
+
+            // Calculate percentage saving using (SQRT(investValue) * 0.004) * 100
+            var savingPercentage = round(Math.sqrt(investValue) * 0.004 * 100, 2);
+
+            output.innerHTML = investValue;
+
+            // Update both percent savings (displayed in text and in table)
+            percentSavingDisplay.innerHTML = savingPercentage + "%";
+            percentSavingTable.innerHTML = savingPercentage + "%";
+			    document.getElementById("percentSavingInput").value = savingPercentage;
+
+            // Calculate savings based on the round-specific values
+            var minSaveVal = round((savingPercentage / 100) * minValue, 2);
+            var mostSaveVal = round((savingPercentage / 100) * mostValue, 2);
+            var maxSaveVal = round((savingPercentage / 100) * maxValue, 2);
+
+            minSaving.innerHTML = "$" + minSaveVal;
+            mostSaving.innerHTML = "$" + mostSaveVal;
+            maxSaving.innerHTML = "$" + maxSaveVal;
+
+            // Calculate ROI (Best and Worst Scenarios in $)
+            var bestScenarioROI = investValue > 0 ? round(maxSaveVal - investValue, 2) : 0;
+            var worstScenarioROI = investValue > 0 ? round(minSaveVal - investValue, 2) : 0;
+
+            bestROI.innerHTML = "$" + bestScenarioROI;
+            worstROI.innerHTML = "$" + worstScenarioROI;
+        });
+    </script>
+   <br>
+<h2 style="text-align:justify"><strong>
+Remember, your net savings will be calculated using the following formula:</strong></h2>
+    <br>
+<div class="boxed" style="display: inline-block"><strong><font color="blue">Net Saving = Realized Saving-EE Investment </font></strong></div><br><br>
+  <br>
+    <p><b>Click the below button to confirm your investment decision</b></p>
+<input type="hidden" name="percentSaving" id="percentSavingInput" value="15.49">
+
+    <input type="submit" value="Confirm" class="mybutton">
+    <input type="hidden" name="contextChecksum" value="34fafe91a81d3a62755863dfb620ebf7">
+
+
+
+</form></div><div id="sophie_stepstartup" class="hidden sophie_loading"><img src="./SoPHIE3_files/ajax-loader.gif"></div><div id="sophie_stepcountdown" class="hidden sophie_stepcountdown"><div id="sophie_countdown_timer" class="hidden"></div></div><div id="sophie_stepend" class="hidden sophie_loading"><img src="./SoPHIE3_files/ajax-loader.gif"></div><form class="hidden" id="sophie_form_nextstep" action="https://ivey.sophielabs.net/expfront/step/index" method="POST"><input type="hidden" name="contextChecksum" value="34fafe91a81d3a62755863dfb620ebf7" id="contextChecksum"></form>		</div>
+
+		<div id="footer">
+					</div>
+
+	</div>
+
+<script src="./SoPHIE3_files/jquery-1.10.2.min.js.download"></script>
+<script src="./SoPHIE3_files/bootstrap.min.js.download"></script>
+<script src="./SoPHIE3_files/bootbox.min.js.download"></script>
+<script src="./SoPHIE3_files/jquery.toaster.js.download"></script>
+<script src="./SoPHIE3_files/jquery.json.min.js.download"></script>
+<script src="./SoPHIE3_files/toaster.js.download"></script>
+<script src="./SoPHIE3_files/module.js.download"></script><script>+function(){"use strict";var jsOnLoad=function(){(function(){if ("undefined" === typeof window.sophieFrontend) { window.location.reload(true); } else { window.sophieFrontend.init("34fafe91a81d3a62755863dfb620ebf7", {"_timerEnabled":false,"previewMode":false,"timerProceedByFrontend":true,"stepSyncInterval":250,"ajaxStepsyncEndpoint":"\/expfront\/ajax\/stepsync","servertimeEndpoint":"\/expfront\/servertime\/index","participantCode":"rofiwunu7038"}); }})();};if(typeof window.onload!='function'){window.onload=jsOnLoad;}else{var prevOnLoad=window.onload;window.onload=function(){if(prevOnLoad){prevOnLoad();}jsOnLoad();};}}();</script>
+</body></html>
